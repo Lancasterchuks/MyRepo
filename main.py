@@ -24,9 +24,10 @@ class BankSystemGUI():
          d_input = eval(Entry.get(self.user_input))
          if d_input > self.balance:
                  d.label.configure(text='Insufficient Balance n would you like an overdraft? yes/no \n ') 
-            d_input2 = Entry.get(self.user_input)
-            if d_input2 == 'yes':
-                                        d_label.configure(text='Your request is being reviewed.')
+                 d_input2 = Entry.get(self.user_input)
+                           if d_input2 == 'yes':
+                                        
+               d_label.configure(text='Your request is being reviewed.')
              else:
                  d.label.configure(text='Please try again later')
          else:
